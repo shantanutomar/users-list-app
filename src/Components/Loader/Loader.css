@@ -4,3 +4,39 @@
     margin-top: 10%;
     padding: 20px;
 }
+.outer-circle {
+    background-color: #e5f1cc;
+    width: 80px; 
+    height: 80px;
+    position:relative;
+    border-radius: 50%;
+}
+.mid-circle {
+    background-color: #d0e5a3;
+    top: 15%; 
+    left: 15%; 
+    width: 70%; 
+    height: 70%;
+    position: absolute;
+    border-radius: 50%;
+    animation: scaleIn 2s infinite cubic-bezier(.36, .11, .89, .32);
+  }
+.inner-circle {
+    background-color: #7fb900;
+    top: 35%; 
+    left:35%; 
+    width: 28%; 
+    height: 28%; 
+    position: absolute;
+    border-radius: 50%;
+  }
+@keyframes scaleIn {
+  from {
+    transform: scale(.5, .5);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2.5, 2.5);
+    opacity: 0;
+  }
+}
