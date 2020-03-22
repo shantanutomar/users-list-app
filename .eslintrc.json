@@ -5,7 +5,11 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        // No unused var issue with eslint
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -34,6 +38,14 @@
               "jsx": "never",
               "ts": "never",
               "tsx": "never"
+            }
+        ],
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "react/prop-types": 0,
+        "@typescript-eslint/interface-name-prefix": [
+            "error",
+            {
+                "prefixWithI": "always"
             }
         ]
     },
