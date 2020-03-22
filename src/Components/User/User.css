@@ -1,0 +1,8 @@
+.user {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}

@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Users from './Components/Users/Users';
 
 function App() {
   return (
     <div className="App">
-      <div>Users list app</div>
+      <Users />
     </div>
   );
 }
