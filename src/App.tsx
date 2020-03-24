@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Users from './Components/Users/Users';
+import AppWrapper from './Components/Wrapper/Wrapper';
 
 function App() {
   return (
     <div className="App">
-      <Users />
+      <AppWrapper />
     </div>
   );
 }

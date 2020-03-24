@@ -1,5 +1,6 @@
-export const FETCH_USERS = 'FETCH_USERS';
+// export const FETCH_USERS = 'FETCH_USERS';
 export const FETCH_USERS_SUCCESS = 'FETCH_USERS_SUCCESS';
+export const FETCH_USERS_FAILURE = 'FETCH_USERS_FAILURE';
 
 export interface IUser {
     id: number;
@@ -20,11 +21,7 @@ export interface IAppState {
     totalUsersCount: number;
     isLoading: boolean;
     currentPage: number;
-}
-
-interface IFetchUsers {
-    type: typeof FETCH_USERS;
-    payload: number;
+    isError: boolean;
 }
 
 interface IFetchUsersSuccess {
@@ -32,4 +29,8 @@ interface IFetchUsersSuccess {
     payload: IUsers;
 }
 
-export type IUserActionTypes = IFetchUsers | IFetchUsersSuccess;
+interface IFetchUsersFailure {
+    type: typeof FETCH_USERS_FAILURE;
+}
+
+export type IUserActionTypes = IFetchUsersSuccess | IFetchUsersFailure;

@@ -47,7 +47,8 @@
             {
                 "prefixWithI": "always"
             }
-        ]
+        ],
+        "no-console": "off"
     },
     "settings": {
         // Helps in importing filenames as Components
