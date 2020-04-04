@@ -1,8 +1,10 @@
 # Users List Application
 
-This application has been developed using ReactJS/Redux & Typescript. It fetches the users from the API and 
-lists down in a scrollable list. In the initial fetch it fetches 6 users in a single page and once users scoll 
-down fetches more users and display all of them.  
+This application has been developed using ReactJS/Redux along with Typescript. 
+
+The application starts with a Custom Loader being displayed for 3 seconds and once data is fetched for the users displays the users data in a scrollable list.
+
+In the initial fetch it fetches 6 users in a single page and once users scoll down fetches more users and display all of them.
 
 The app is running at -> https://users-list-app.netlify.com
 
